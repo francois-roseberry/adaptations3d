@@ -1,0 +1,1 @@
+# Static website for adaptations3d.ca
