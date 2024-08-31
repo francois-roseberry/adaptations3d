@@ -1,0 +1,15 @@
+{
+    "languageSwitch": "FR",
+    "tagline": "Helping people with 3D printing",
+    "sections": {
+        "product": {
+            "summary": "Ongoing development of a kayak adaptation",
+            "content": "Interested to know more about it ? <a href=\"mailto:info@adaptations3d.ca\">Let me know</a>"
+        },
+        "contact": {
+            "summary": "Have another project in mind that requires 3D printing?",
+            "content": "Be it a custom designed piece or simply a planter model you found and want printed, <a href=\"mailto:info@adaptations3d.ca\">let's talk</a>"
+        }
+    },
+    "copyright": "Copyright (c) 2024, Adaptations 3D, all rights reserved"
+}

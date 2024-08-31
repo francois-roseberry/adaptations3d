@@ -1,0 +1,7 @@
+node_modules/
+
+# Generated
+public/
+
+# OS X
+.DS_Store
