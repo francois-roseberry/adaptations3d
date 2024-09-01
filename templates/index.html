@@ -81,39 +81,9 @@
     <!-- Script to toggle languages -->
     <script>
         function updateContent(language) {
-            // const tagline = document.getElementById('tagline');
-            // const homeLink = document.getElementById('home-link');
-            // const aboutLink = document.getElementById('about-link');
-            // const productSection = document.getElementById('section-product');
-            // const contactSection = document.getElementById('section-contact');
-            // const contactLink1 = document.getElementById('contact-link1');
-            // const contactLink2 = document.getElementById('contact-link2');
-            // const footerText = document.getElementById('footer-text');
-            // const langButton = document.getElementById('lang-button');
-
             if (language === 'fr') {
-                console.log("Updating language to french")
-                // langButton.innerText = 'EN';
-                // tagline.innerText = 'Aider les gens avec l\'impression 3D';
-                // homeLink.innerText = 'Accueil';
-                // aboutLink.innerText = 'À propos';
-                // productSection.querySelector('h2').innerText = 'Développement en cours d\'une adaptation de kayak';
-                // productSection.querySelector('p').innerHTML = 'Intéressé à en savoir plus ? <a href="mailto:info@adaptations3d.ca" id="contact-link1">Entrons en contact</a>.';
-                // contactSection.querySelector('h2').innerText = 'Vous avez un autre projet en tête qui nécessite de l\'impression 3D ?';
-                // contactSection.querySelector('p').innerHTML = 'Que ce soit un pièce à créer sur mesure ou simplement un modèle de pot de fleurs que vous avez déjà et que vous voulez imprimer, <a href="mailto:info@adaptations3d.ca" id="contact-link2">discutons</a>.';
-                // footerText.innerText = 'Copyright 2024 (c) 2024, Adaptations 3D, tous droits réservés';
                 window.location.href = '/'
             } else {
-                console.log('Updating language to english')
-                // langButton.innerText = 'FR';
-                // tagline.innerText = 'Helping people with 3D printing';
-                // homeLink.innerText = 'Home';
-                // aboutLink.innerText = 'About';
-                // productSection.querySelector('h2').innerText = 'Ongoing development of a kayak adaptation';
-                // productSection.querySelector('p').innerHTML = 'Interested to know more about it? <a href="mailto:info@adaptations3d.ca" id="contact-link1">Let me know</a>.';
-                // contactSection.querySelector('h2').innerText = 'Have another project in mind that requires 3D printing?';
-                // contactSection.querySelector('p').innerHTML = 'Be it a custom designed piece or simply a planter model you already have and want printed, <a href="mailto:info@adaptations3d.ca" id="contact-link2">let\'s talk</a>.';
-                // footerText.innerText = 'Copyright (c) 2024, Adaptations 3D, all rights reserved';
                 window.location.href = "en"
             }
         }
@@ -127,14 +97,11 @@
         function initializeLanguage() {
             let desiredLanguage = localStorage.getItem('language');
             if (!desiredLanguage) {
-                console.log("Initializing language from browser")
                 const userLocale = navigator.language || navigator.userLanguage;
                 desiredLanguage = userLocale.startsWith('fr') ? 'fr' : 'en';
             }
             
-            console.log("Desired language is", desiredLanguage)
             const languageSwitch = document.querySelector('button').innerText.toLowerCase();
-            console.log("Language switch is", languageSwitch)
 
             // if the desired language is the same as the current page language, do nothing
             // if it is the same as the language switch, then switch
