@@ -20,4 +20,4 @@ Run `yarn start`. It runs a simple Node script which uses `express` to serve the
 
 ## Deployment
 
-Copy the contents of the generated `public/` directory to a static website hosting provider, like GitHub Pages or a S3 bucket.
+Launch the `Deploy site` github action to deploy to Github Pages
