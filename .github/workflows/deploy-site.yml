@@ -1,0 +1,21 @@
+name: Deploy site
+on: workflow_dispatch
+
+jobs:
+  deploy_site:
+    name: Deploy website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: install dependencies
+        run: yarn
+
+      - name: Build website
+        run: yarn build
+      
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: public/
