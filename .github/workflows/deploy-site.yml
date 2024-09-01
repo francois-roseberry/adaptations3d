@@ -4,6 +4,12 @@ on: workflow_dispatch
 jobs:
   deploy_site:
     name: Deploy website
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,8 +20,12 @@ jobs:
 
       - name: Build website
         run: yarn build
-      
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: public/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
