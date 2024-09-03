@@ -10,6 +10,10 @@
         "contact": {
             "summary": "Vous avez un autre projet en tête qui nécessite de l'impression 3D ?",
             "content": "Que ce soit une pièce à créer sur mesure ou simplement un modèle de pot de fleurs que vous avez trouvé et que vous voulez imprimer, <a href=\"mailto:info@adaptations3d.ca\">discutons</a>"
+        },
+        "about": {
+            "summary": "Qui est derrière Adaptations 3D ?",
+            "content": "Mon nom est François Roseberry, je suis développeur logiciel de jour et bricoleur de soir. J'ai passé plus de 3 ans à modifier et ajuster des imprimantes, à apprendre la modélisation, et à imprimer et construire divers trucs. Je suis situé au coeur de la ville de Québec, pour être facilement accessible pour vous."
         }
     },
     "follow": "Vous pouvez suivre mes créations sur ma <a href=\"https://www.thingiverse.com/fr0s4b4rry/designs\">page Thingiverse</a> et ma <a href=\"https://www.printables.com/@FrancoisRoseb_455343\">page Printables</a>",

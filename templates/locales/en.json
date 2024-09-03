@@ -10,6 +10,10 @@
         "contact": {
             "summary": "Have another project in mind that requires 3D printing?",
             "content": "Be it a custom designed piece or simply a planter model you found and want printed, <a href=\"mailto:info@adaptations3d.ca\">let's talk</a>"
+        },
+        "about": {
+            "summary": "Who's behind Adaptations 3D ?",
+            "content": "My name is François Roseberry, I'm a software developer by day and maker by night. I've spent over 3 years tweaking printers, learning CAD and building stuff. I'm located in the heart of Quebec City so I can be your easily accessible 3D printing corner shop for small printing jobs."
         }
     },
     "follow": "You can follow my creations on my <a href=\"https://www.thingiverse.com/fr0s4b4rry/designs\">Thingiverse page</a> and my <a href=\"https://www.printables.com/@FrancoisRoseb_455343\">Printables page</a>",
