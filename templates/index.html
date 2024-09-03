@@ -132,11 +132,11 @@
                     desiredLanguage = userLocale.startsWith('fr') ? 'fr' : 'en'
                 }
                 
-                const languageSwitch = document.querySelector('button').innerText.toLowerCase()
+                const currentLanguage = document.querySelector('html').getAttribute("lang")
 
                 // if the desired language is the same as the current page language, do nothing
-                // if it is the same as the language switch, then switch
-                if (desiredLanguage === languageSwitch) {
+                // if it is not, then switch
+                if (desiredLanguage !== currentLanguage) {
                     updateContent(desiredLanguage)
                 }
             }
