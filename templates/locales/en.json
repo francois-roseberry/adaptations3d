@@ -5,7 +5,8 @@
     "sections": {
         "product": {
             "summary": "Ongoing development of a kayak adaptation",
-            "content": "Interested to know more about it ? <a href=\"mailto:info@adaptations3d.ca\">Let me know</a>"
+            "content": "It consists of an adjustable angled arm, which is fixed to the kayak deck in front of the cockpit. It holds the paddle in the air, giving it a fixed rotation point, to help people with upper body limitations, or even just one arm, to enjoy kayaking.",
+            "prompt": "Interested to know more about it ? <a href=\"mailto:info@adaptations3d.ca\">Let me know</a>"
         },
         "contact": {
             "summary": "Have another project in mind that requires 3D printing?",
