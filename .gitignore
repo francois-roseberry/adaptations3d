@@ -6,5 +6,5 @@ public/
 # OS X
 .DS_Store
 
-# Yrn
+# Yarn
 yarn-error.log
