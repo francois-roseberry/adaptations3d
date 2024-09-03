@@ -88,29 +88,30 @@
             }
         }
 
+        /* eslint-disable-next-line no-unused-vars */
         function toggleLanguage() {
-            const languageSwitch = document.querySelector('button').innerText.toLowerCase();
-            localStorage.setItem('language', languageSwitch);
-            updateContent(languageSwitch);
+            const languageSwitch = document.querySelector('button').innerText.toLowerCase()
+            localStorage.setItem('language', languageSwitch)
+            updateContent(languageSwitch)
         }
 
         function initializeLanguage() {
-            let desiredLanguage = localStorage.getItem('language');
+            let desiredLanguage = localStorage.getItem('language')
             if (!desiredLanguage) {
-                const userLocale = navigator.language || navigator.userLanguage;
-                desiredLanguage = userLocale.startsWith('fr') ? 'fr' : 'en';
+                const userLocale = navigator.language || navigator.userLanguage
+                desiredLanguage = userLocale.startsWith('fr') ? 'fr' : 'en'
             }
             
-            const languageSwitch = document.querySelector('button').innerText.toLowerCase();
+            const languageSwitch = document.querySelector('button').innerText.toLowerCase()
 
             // if the desired language is the same as the current page language, do nothing
             // if it is the same as the language switch, then switch
             if (desiredLanguage === languageSwitch) {
-                updateContent(desiredLanguage);
+                updateContent(desiredLanguage)
             }
         }
 
-        document.addEventListener('DOMContentLoaded', initializeLanguage);
+        document.addEventListener('DOMContentLoaded', initializeLanguage)
     </script>
 </body>
 </html>

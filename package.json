@@ -6,7 +6,8 @@
   "scripts": {
     "build": "./build.sh",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --stats"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,12 @@
   },
   "homepage": "https://github.com/francois-roseberry/adaptations3d#readme",
   "dependencies": {
-    "static-i18n": "^0.2.10"
+    "static-i18n": "0.2.10"
   },
   "devDependencies": {
-    "express": "^4.19.2"
+    "@eslint/js": "9.9.1",
+    "eslint": "9.9.1",
+    "eslint-plugin-html": "8.1.1",
+    "express": "4.19.2"
   }
 }
