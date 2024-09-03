@@ -4,10 +4,10 @@
   "description": "Multilingual static website for Adaptations 3D, a 3D printing service",
   "main": "index.js",
   "scripts": {
-    "build": "./build.sh",
+    "lint": "eslint . --stats",
+    "build": "yarn lint && ./build.sh",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --stats"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
