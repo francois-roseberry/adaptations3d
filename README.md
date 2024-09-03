@@ -10,9 +10,9 @@ Install node and yarn
 
 Run `yarn`
 
-### Compiling the translations and generating the website
+### Linting, compiling the translations and generating the website
 
-Run `yarn build`. All required files will be copied under `public/`
+Run `yarn build`. The html and embedded javascript will be linted, then all required files will be copied under `public/`
 
 ### Running
 
