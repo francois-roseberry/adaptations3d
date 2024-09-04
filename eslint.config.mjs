@@ -15,6 +15,7 @@ export default [{
             document: "readonly",
             navigator: "readonly",
             localStorage: "readonly",
+            dataLayer: "readonly",
         },
         parser: htmlParser,
     },
