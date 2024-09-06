@@ -5,6 +5,7 @@
     "sections": {
         "product": {
             "summary": "Développement en cours d'une adaptation de kayak",
+            "photo": "(La photo ci-contre est un prototype fonctionnel mais peut différer du produit final)",
             "content": "Il s'agit d'un bras incliné ajustable, fixé sur le pont du kayak, devant l'hiloire. Il maintient la pagaie dans les airs, en lui donnant un point de rotation fixe, permettant aux gens avec des limitations au haut du corps, ou même un seul bras, de profiter des joies du kayak.",
             "prompt": "Intéressé à en savoir plus ? <a href=\"mailto:info@adaptations3d.ca\">Entrons en contact</a>"
         },

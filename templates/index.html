@@ -5,7 +5,7 @@
         <meta name="robots" content="all,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="François Roseberry">
-        <meta name="keywords" content="adaptation,disability,printing,3d,quebec,fast,small,kayak">
+        <meta name="keywords" content="adaptation,prototype,disability,printing,3d,quebec,fast,small,kayak">
         <title>Adaptations 3D</title>
         <link
             rel="stylesheet"
@@ -59,8 +59,14 @@
             .nav-menu {
                 margin-left: 100px;
             }
+            h2 {
+                margin-bottom: 26px;
+            }
             #section-product {
-                padding-top: 10px;
+                padding-top: 5px;
+            }
+            #productPhotoDisclaimer {
+                font-size: 0.9rem
             }
             footer {
                 background-color: #f8f9fa;
@@ -123,18 +129,31 @@
         <main class="container" style="margin-top: 80px;">
             <section id="section-product" class="my-5">
                 <h2 data-i18n="sections.product.summary"></h2>
-                <p data-i18n="sections.product.content"></p>
-                <p data-i18n="sections.product.prompt"></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img
+                            src="assets/img/kayak-adaptation.jpeg"
+                            alt="Kayak adaptation"
+                            height="460"
+                            class="img-responsive"
+                        >
+                    </div>
+                    <div class="col-md-6">
+                        <p id="productPhotoDisclaimer" data-i18n="sections.product.photo"></p>
+                        <p class="lead" data-i18n="sections.product.content"></p>
+                        <p class="lead" data-i18n="sections.product.prompt"></p>
+                    </div>
+                </div>
             </section>
 
             <section id="section-contact" class="my-5">
                 <h2 data-i18n="sections.contact.summary"></h2>
-                <p data-i18n="sections.contact.content"></p>
+                <p class="lead" data-i18n="sections.contact.content"></p>
             </section>
 
             <section id="section-about" class="my-5">
                 <h2 data-i18n="sections.about.summary"></h2>
-                <p data-i18n="sections.about.content"></p>
+                <p class="lead" data-i18n="sections.about.content"></p>
             </section>
         </main>
 
