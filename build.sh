@@ -51,22 +51,3 @@ cp -R assets public/
 
 echo "Generating translated files"
 static-i18n --selector [data-i18n] -l fr -i en -i fr -o public tmp
-
-# echo "Expanding partials in generated files"
-# # Use awk to find {{ some_dynamic_file.txt }} and replace them with the content of the file
-# awk '{
-#   while (match($0, /\{\{([^}]+)\}\}/)) {
-#     # Extract the filename inside the placeholder {{ filename.txt }}
-#     filename = substr($0, RSTART + 2, RLENGTH - 4)
-
-#     # Use "while (getline)" to read the entire content of the file
-#     file_contents = ""
-#     while ((cmd = "cat " filename) | getline line) {
-#       file_contents = file_contents line "\n"
-#     }
-#     close(cmd)
-#     # Replace the found match with the file contents
-#     $0 = substr($0, 1, RSTART - 1) file_contents substr($0, RSTART + RLENGTH)
-#   }
-#   print
-# }' "public/index.html"
