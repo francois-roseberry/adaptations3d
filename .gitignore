@@ -1,6 +1,7 @@
 node_modules/
 
 # Generated
+tmp/
 public/
 
 # OS X

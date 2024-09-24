@@ -1,0 +1,80 @@
+<header class="bg-light border-bottom fixed-top">
+    <div class="container-fluid">
+        <div class="header-content">
+            <div class="d-flex align-items-center">
+                <img
+                    src="assets/img/logo.png"
+                    alt="Adaptations 3D Logo"
+                    height="50"
+                >
+                <span
+                    id="tagline"
+                    class="fs-5 tagline"
+                    data-i18n="tagline"
+                ></span>
+                <nav class="nav-menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href=""
+                                id="home-link"
+                            ></a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="about-link"
+                            ></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <button
+                    class="btn btn-outline-secondary btn-sm"
+                    onclick="toggleLanguage()"
+                    id="lang-button"
+                    data-i18n="languageSwitch"
+                ></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Script to toggle languages -->
+<script>
+    function updateContent(language) {
+        if (language === 'fr') {
+            window.location.href = '..'
+        } else {
+            window.location.href = "en"
+        }
+    }
+
+    /* eslint-disable-next-line no-unused-vars */
+    function toggleLanguage() {
+        const languageSwitch = document.querySelector('button').innerText.toLowerCase()
+        localStorage.setItem('language', languageSwitch)
+        updateContent(languageSwitch)
+    }
+
+    function initializeLanguage() {
+        let desiredLanguage = localStorage.getItem('language')
+        if (!desiredLanguage) {
+            const userLocale = navigator.language || navigator.userLanguage
+            desiredLanguage = userLocale.startsWith('fr') ? 'fr' : 'en'
+        }
+        
+        const currentLanguage = document.querySelector('html').getAttribute("lang")
+
+        // if the desired language is the same as the current page language, do nothing
+        // if it is not, then switch
+        if (desiredLanguage !== currentLanguage) {
+            updateContent(desiredLanguage)
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initializeLanguage)
+</script>
