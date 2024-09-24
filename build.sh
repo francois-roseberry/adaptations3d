@@ -38,7 +38,7 @@ echo "Creating tmp/ directory if not existing"
 mkdir -p tmp
 
 echo "Expanding partials into /tmp directory"
-expand_files templates tmp
+expand_files pages tmp
 
 echo "Copying locales into tmp/"
 cp -R locales tmp/
